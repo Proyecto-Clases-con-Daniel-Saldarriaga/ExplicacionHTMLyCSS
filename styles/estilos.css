@@ -13,4 +13,20 @@ ul{
     margin: 0px;
 }
 
+.mainButtom{
+    background-color: #1bb76e;
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 1px 1px green;
+}
+
+.mainButtom:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px green;
+    transform: scale(1.1);
+}
+
 
