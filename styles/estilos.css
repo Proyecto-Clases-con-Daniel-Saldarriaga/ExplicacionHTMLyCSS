@@ -13,7 +13,6 @@ ul{
     margin: 0px;
 }
 
-<<<<<<< HEAD
 .logo{
     width: 45px;
     padding-left: 20px;
@@ -49,7 +48,8 @@ ul{
     cursor: pointer;
     box-shadow: 2px 2px rgb(47, 135, 146);
     transform: scale(1.1);
-=======
+}
+
 .buscar{
     background-color: white;
     border: 1px solid gray;
@@ -64,7 +64,6 @@ ul{
 
 .buscar:focus-within{
     border: 2px solid rgb(79, 243, 79);
->>>>>>> 8-crear-cuadro-busqueda
 }
 
 
