@@ -13,4 +13,20 @@ ul{
     margin: 0px;
 }
 
+.buscar{
+    background-color: white;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.buscar > input{
+    outline: none;
+    border: 0px;
+}
+
+.buscar:focus-within{
+    border: 2px solid rgb(79, 243, 79);
+}
+
 
