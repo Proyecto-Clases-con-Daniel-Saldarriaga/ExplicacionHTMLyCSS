@@ -1,0 +1,93 @@
+.body{
+    margin: 0px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+.card{
+    margin: 10px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo{
+    width: 45px;
+    padding-left: 20px;
+}
+
+.mainButtom{
+    background-color: #1bb76e;
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 1px 1px green;
+}
+
+.mainButtom:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px green;
+    transform: scale(1.1);
+}
+
+.secondaryButtom{
+    background-color: #66d8f5;
+    color: white;
+    border: 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    box-shadow: 1px 1px green;
+}
+
+.secondaryButtom:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px rgb(47, 135, 146);
+    transform: scale(1.1);
+}
+
+.buscar{
+    background-color: white;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.buscar > input{
+    outline: none;
+    border: 0px;
+}
+
+.buscar:focus-within{
+    border: 2px solid rgb(79, 243, 79);
+}
+
+.contenedorImagen{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+
+}
+
+.contenedorImagen > img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
