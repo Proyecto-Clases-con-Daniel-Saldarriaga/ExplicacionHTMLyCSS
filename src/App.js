@@ -1,12 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import borderCollie from './media/Border_collie.jpg'
+import rhodesian from './media/rhodesian.jpg'
+import logo from './media/Logo.png'
 
 function App() {
   return (
     <div className="App">
       <header>
         <ul className="navbar">
-            <li><img src="media/Logo.png" className="logo" alt="Logo" /></li>
+            <li><img src={logo} className="logo" alt="Logo" /></li>
             <li><button className="mainButtom">Nuevo post</button></li>
             <li><button className="secondaryButtom">Login</button></li>
             <li><button className="mainButtom">Registro</button></li>
@@ -24,7 +26,7 @@ function App() {
             <ul className="contenerCards">
                 <li className="card">
                     <div  className="contenedorImagen">
-                        <img src="./media/Border_collie.jpg" alt="Foto de un Border_collie" />
+                        <img src={borderCollie} alt="Foto de un Border_collie" />
                     </div>
                     <span className="title">Border Collie</span>
                     <div className="emoticones">
@@ -35,7 +37,7 @@ function App() {
                 </li>
                 <li className="card">
                     <div  className="contenedorImagen">
-                        <img src="./media/rhodesian.jpg" alt="Foto de un Rhodesian" /> 
+                        <img src={rhodesian} alt="Foto de un Rhodesian" /> 
                     </div>
                     <span className="title">Rhodesian</span>
                     <div className="emoticones">

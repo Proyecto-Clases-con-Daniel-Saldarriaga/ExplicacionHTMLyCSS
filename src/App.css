@@ -15,7 +15,7 @@ ul{
 .navbar{
   display: flex;
   justify-content: space-between;
-  padding: 0px;
+  padding: 20px;
   margin: 0px;
 }
 
@@ -32,6 +32,7 @@ ul{
   border-radius: 10px;
   font-weight: bolder;
   box-shadow: 1px 1px green;
+  width: 150px;
 }
 
 .mainButtom:hover{
