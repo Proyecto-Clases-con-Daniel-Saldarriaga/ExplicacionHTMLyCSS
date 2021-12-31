@@ -2,6 +2,7 @@ import './App.css';
 import borderCollie from './media/Border_collie.jpg'
 import rhodesian from './media/rhodesian.jpg'
 import logo from './media/Logo.png'
+import React, { useState } from 'react';
 
 function App() {
   return (
@@ -48,11 +49,27 @@ function App() {
                 </li>
             </ul>
         </section>
-        <section></section>
+        <section>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Hola soy un comentario2</p>
+        <CardFuncion/>
+    </footer>
     </div>
   );
+
 }
+
+function CardFuncion(){
+    return(
+        <div>Hola soy un comentario</div>
+    )
+}
+
+
+let a = 5;
+let bob = a => a + 100;
+
 
 export default App;
