@@ -1,7 +1,8 @@
-import './App.css';
-import borderCollie from './media/Border_collie.jpg'
-import rhodesian from './media/rhodesian.jpg'
-import logo from './media/Logo.png'
+import CardRazaPerros from 'components/CardRazaPerros';
+import 'App.css';
+import borderCollie from 'media/Border_collie.jpg'
+import rhodesian from 'media/rhodesian.jpg'
+import logo from 'media/Logo.png'
 import React, { useState } from 'react';
 
 function App() {
@@ -25,8 +26,8 @@ function App() {
         <section>
             <h1 className="titulo-principal">Razas de perros</h1>
             <ul className="contenerCards">
-            <CardFuncion nombreRaza="BorderCollie" img={borderCollie} color='backgroundRojo'/>
-            <CardFuncion nombreRaza="Rhodesian" img={rhodesian} color='backgroundVerde'/>
+            <CardRazaPerros nombreRaza="BorderCollie" img={borderCollie} color='backgroundRojo'/>
+            <CardRazaPerros nombreRaza="Rhodesian" img={rhodesian} color='backgroundVerde'/>
             </ul>
         </section>
         <section>
@@ -39,21 +40,6 @@ function App() {
 
 }
 
-function CardFuncion(props){
-    return(
-        <li className="card" className={props.color}>
-                    <div  className="contenedorImagen">
-                        <img src={props.img} alt={props.nombreRaza} />
-                    </div>
-                    <span className="title">{props.nombreRaza}</span>
-                    <div className="emoticones">
-                        <i className="fas fa-heart" className="corazon">150</i>
-                        <i className="far fa-comment" className="comentario">1.5k</i>
-                        <i className="fas fa-eye" className="ojo">120</i> 
-                    </div>    
-                </li>
-    )
-}
 
 
 let a = 5;
