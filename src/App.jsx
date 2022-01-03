@@ -25,45 +25,33 @@ function App() {
         <section>
             <h1 className="titulo-principal">Razas de perros</h1>
             <ul className="contenerCards">
-                <li className="card">
-                    <div  className="contenedorImagen">
-                        <img src={borderCollie} alt="Foto de un Border_collie" />
-                    </div>
-                    <span className="title">Border Collie</span>
-                    <div className="emoticones">
-                        <i className="fas fa-heart" className="corazon">150</i>
-                        <i className="far fa-comment" className="comentario">1.5k</i>
-                        <i className="fas fa-eye" className="ojo">120</i> 
-                    </div>    
-                </li>
-                <li className="card">
-                    <div  className="contenedorImagen">
-                        <img src={rhodesian} alt="Foto de un Rhodesian" /> 
-                    </div>
-                    <span className="title">Rhodesian</span>
-                    <div className="emoticones">
-                        <i className="fas fa-heart" className="corazon">450</i>
-                        <i className="far fa-comment" className="comentario">1.1k</i>
-                        <i className="fas fa-eye" className="ojo">850</i> 
-                    </div>               
-                </li>
+            <CardFuncion nombreRaza="BorderCollie" img={borderCollie} color='backgroundRojo'/>
+            <CardFuncion nombreRaza="Rhodesian" img={rhodesian} color='backgroundVerde'/>
             </ul>
         </section>
         <section>
         </section>
     </main>
     <footer>
-        <p>Hola soy un comentario2</p>
-        <CardFuncion/>
     </footer>
     </div>
   );
 
 }
 
-function CardFuncion(){
+function CardFuncion(props){
     return(
-        <div>Hola soy un comentario</div>
+        <li className="card" className={props.color}>
+                    <div  className="contenedorImagen">
+                        <img src={props.img} alt={props.nombreRaza} />
+                    </div>
+                    <span className="title">{props.nombreRaza}</span>
+                    <div className="emoticones">
+                        <i className="fas fa-heart" className="corazon">150</i>
+                        <i className="far fa-comment" className="comentario">1.5k</i>
+                        <i className="fas fa-eye" className="ojo">120</i> 
+                    </div>    
+                </li>
     )
 }
 

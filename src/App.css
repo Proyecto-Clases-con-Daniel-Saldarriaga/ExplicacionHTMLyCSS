@@ -143,3 +143,13 @@ i.fas.fa-eye::before{
   text-align: center;
   color: rgb(141, 137, 137);
 }
+
+.backgroundRojo{
+  background-color: red;
+  border-radius: 10px;
+}
+
+.backgroundVerde{
+  background-color: green;
+  border-radius: 10px;
+}
