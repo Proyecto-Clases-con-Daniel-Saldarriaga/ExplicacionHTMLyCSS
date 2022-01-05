@@ -1,6 +1,6 @@
 import 'App.css';
-import Rhodesian from 'components/pages/rhodesian'
-import CardRazaPerros from "components/CardRazaPerros";
+import 'layouts/layouts.jsx';
+import RhodesianInfoPage from 'pages/rhodesian';
 import Index from 'pages/index.jsx';
 import {
     BrowserRouter as Router,
@@ -15,7 +15,7 @@ function App() {
                 <Router>
                   <Switch>
                     <Route path='/rhodesian'>
-                        <Rhodesian/>
+                        <RhodesianInfoPage/>
                     </Route>
                     <Route path='/'>
                         <Index/>

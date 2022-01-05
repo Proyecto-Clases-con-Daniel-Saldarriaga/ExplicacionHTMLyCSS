@@ -1,25 +1,14 @@
 import CardRazaPerros from "components/CardRazaPerros";
+import Header from "components/Header";
 import borderCollie from 'media/Border_collie.jpg'
 import rhodesian from 'media/rhodesian.jpg'
-import logo from 'media/Logo.png'
+import Footer from 'components/Footer'
+
 
 function Index(){
     return (
         <div>
-    <header>
-    <ul className="navbar">
-        <li><img src={logo} className="logo" alt="Logo" /></li>
-        <li><button className="mainButtom">Nuevo post</button></li>
-        <li><button className="secondaryButtom">Login</button></li>
-        <li><button className="mainButtom">Registro</button></li>
-        <li>
-            <div className="buscar">
-                <input placeholder="Buscar raza de perro" />
-                <i className="fas fa-search"></i>
-            </div>
-        </li>
-    </ul>
-</header>
+    <Header/>
 <main>
     <section>
         <h1 className="titulo-principal">Razas de perros</h1>
@@ -32,6 +21,7 @@ function Index(){
     </section>
 </main>
 <footer>
+    <Footer/>
 </footer>
 </div>
 );
