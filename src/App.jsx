@@ -7,20 +7,27 @@ import {
     Switch,
     Route
   } from "react-router-dom";
+import Layout from 'layouts/layouts'
+import BorderCollie from 'pages/borderCollie';
 
 
 function App() {
   return (
     <div className="App">
                 <Router>
+                <Layout>
                   <Switch>
                     <Route path='/rhodesian'>
                         <RhodesianInfoPage/>
                     </Route>
+                    <Route path='/bordercollie'>
+                        <BorderCollie/>
+                    </Route>
                     <Route path='/'>
                         <Index/>
                     </Route>
-                    </Switch>
+                  </Switch>
+                </Layout>
                 </Router>
     </div>
 

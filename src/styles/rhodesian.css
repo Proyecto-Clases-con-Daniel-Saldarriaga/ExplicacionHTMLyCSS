@@ -1,12 +1,28 @@
+*{
+  margin: 0px;
+  margin-bottom: 0px;
+}
+
 .mainContainer{
     display: flex;
     flex-direction: column;
     height: 100vh
   }
   
-  .mainContainer2{
+  .mainContainer > main{
     height: 100%;
+    margin: 0px;
   }
+
+  .mainContainer > footer{
+    background-color: red;
+    padding: 10px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+
+
 
   
 

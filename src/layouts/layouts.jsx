@@ -3,14 +3,14 @@ import 'App.css'
 import Header from 'components/Header'
 import Footer from 'components/Footer'
 
-const layouts = () => {
+const Layout = ({children}) => {
     return (
-        <div>
+        <div className="mainContainer">
             <Header/>
-            <div>Este es el contenido</div>
-            <Footer/>            
+            <main>{children}</main>
+            <Footer/>
         </div>
     )
 }
 
-export default layouts
+export default Layout

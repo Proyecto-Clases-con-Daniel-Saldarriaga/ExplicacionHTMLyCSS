@@ -77,8 +77,10 @@ ul{
   display: flex;
   width: 300px;
   height: 350px;
-  background-color: green;
+  background-color: rgb(172, 206, 172);
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .contenedorImagen:hover{
@@ -96,6 +98,7 @@ ul{
   background-color: rgb(153, 204, 77);
   box-shadow: 10px 10px 5px rgb(204, 200, 200);
   border-radius: 10px;
+  
 }
 
 
@@ -145,12 +148,22 @@ i.fas.fa-eye::before{
 }
 
 .backgroundRojo{
-  background-color: red;
+  background-color: rgb(164, 228, 145);
   border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 340px;
+  height: 465px;
+  margin-top:20px ;
 }
 
 .backgroundVerde{
-  background-color: green;
+  background-color: rgb(164, 228, 145);
   border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 340px;
+  height: 465px;
+  margin-top:20px ;
 }
 

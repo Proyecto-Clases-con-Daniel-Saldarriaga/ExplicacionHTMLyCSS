@@ -4,14 +4,11 @@ import 'styles/rhodesian.css'
 
 
 
+
 const RhodesianInfoPage = () => {
     return (
-        <div className="mainContainer">
-            <Header/>
-            <main className="mainContainer2">Esta es la pagina de info del rhodesian</main>
-            <Footer/>
-        </div>
-    )
+        <div>Información sobre el Rhodesian</div>    
+    );
 }
 
 export default RhodesianInfoPage;
